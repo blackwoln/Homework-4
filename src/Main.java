@@ -46,6 +46,18 @@ public class Main {
         }
 
 
-
+        byte ageChildren = 15;
+        boolean ageLol1 = ageChildren < 5;
+        boolean ageLol2 = ageChildren > 5 && ageChildren < 14;
+        boolean ageLol3 = ageChildren > 14;
+        if (ageLol1) {
+            System.out.println("Если возвраст ребенка равен " + ageChildren + ", то ему нельзя кататься на атракцеоне");
+        }
+        if (ageLol2) {
+            System.out.println("Если возвраст ребенка равен " + ageChildren + ", то ему можно кататься на атракцеоне в сопровождении");
+        }
+        if (ageLol3) {
+            System.out.println("Если возвраст ребенка равен " + ageChildren + ", то ему можно кататься на атракцеоне");
+        }
     }
 }
