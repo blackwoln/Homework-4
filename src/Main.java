@@ -59,5 +59,19 @@ public class Main {
         if (ageLol3) {
             System.out.println("Если возвраст ребенка равен " + ageChildren + ", то ему можно кататься на атракцеоне");
         }
+
+        byte capacityWagon = 102;
+        byte sittingPlace = 60;
+        byte standingPlace = (byte) (capacityWagon - sittingPlace);
+        byte sittingWagon = 44;
+        byte standingWagon = 36;
+        byte sittingRemained = (byte) (sittingPlace - sittingWagon);
+        byte standingRemained = (byte) (standingPlace - standingWagon);
+        boolean gone1 = sittingWagon <= sittingPlace && standingWagon <= standingPlace;
+        if (gone1) {
+            System.out.println("В вагоне осталось " + sittingRemained + " сидячих мест и " + standingRemained + " стоячих мест");
+        } else {
+            System.out.println("В вагоне осталось " + sittingRemained + " сидячих мест и " + standingRemained + " стоячих мест");
+        }
     }
 }
