@@ -12,5 +12,14 @@ public class Main {
         } else {
             System.out.println("Он не достиг совершеннолетия, нужно немного подождать");
         }
+
+        byte temperature = 15;
+        if (temperature < 5) {
+            System.out.println("На улице холодно, нужно надеть шапку");
+        } else {
+            System.out.println("Сегодня тепло, можно идти без шапки");
+        }
+
+
     }
 }
