@@ -73,5 +73,20 @@ public class Main {
         } else {
             System.out.println("В вагоне осталось " + sittingRemained + " сидячих мест и " + standingRemained + " стоячих мест");
         }
+
+
+        int one = 6;
+        int two = 14;
+        int three = 15;
+        boolean moreOne = one > two && one > three;
+        boolean moreTwo = one < two && two > three;
+        if (moreOne) {
+            System.out.println("Число " + one + " больше всех");
+        }
+        if (moreTwo) {
+            System.out.println("Число " + two + " больше всех");
+        } else {
+            System.out.println("Число " + three + " больше всех");
+        }
     }
 }
