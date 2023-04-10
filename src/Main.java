@@ -15,9 +15,9 @@ public class Main {
 
         byte temperature = 15;
         if (temperature < 5) {
-            System.out.println("На улице " + temperature +  " градусов, нужно надеть шапку");
+            System.out.println("На улице " + temperature + " градусов, нужно надеть шапку");
         } else {
-            System.out.println("На улице " + temperature +  " градусов, можно идти без шапки");
+            System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
         }
 
         byte speed = 80;
@@ -26,5 +26,26 @@ public class Main {
         } else {
             System.out.println("Если скорость " + speed + ", можно ездить спокойно ");
         }
+
+        byte old = 25;
+        boolean institution1 = old >= 2 && old <= 6;
+        boolean institution2 = old >= 7 && old <= 18;
+        boolean institution3 = old >= 18 && old <= 24;
+        boolean institution4 = old > 24;
+        if (institution1) {
+            System.out.println("Если возвраст человека равен " + old + " лет, то ему нужно ходить в детский сад");
+        }
+        if (institution2) {
+            System.out.println("Если возвраст человека равен " + old + " лет, то ему нужно ходить в школу");
+        }
+        if (institution3) {
+            System.out.println("Если возвраст человека равен " + old + " лет, то ему нужно ходить в университет");
+        }
+        if (institution4) {
+            System.out.println("Если возвраст человека равен " + old + " лет, то ему нужно ходить на работу");
+        }
+
+
+
     }
 }
