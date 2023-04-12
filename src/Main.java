@@ -1,10 +1,16 @@
 public class Main {
     public static void main(String[] args) {
         task1();
+        task2();
+        task3();
+        task4();
+        task5();
+        task6();
+        task7();
     }
 
     public static void task1 () {
-        System.out.println("Урок 1");
+        System.out.println("Задача 1");
 
         int age = 25;
         if (age >= 18) {
@@ -12,6 +18,10 @@ public class Main {
         } else {
             System.out.println("Если возраст человека равен " + age + ", он не достиг совершеннолетия, нужно немного подождать");
         }
+    }
+
+    public static void task2 () {
+        System.out.println("Задача 2");
 
         byte temperature = 15;
         if (temperature < 5) {
@@ -19,6 +29,10 @@ public class Main {
         } else {
             System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
         }
+    }
+
+    public static void task3 () {
+        System.out.println("Задача 3");
 
         byte speed = 80;
         if (speed > 60) {
@@ -26,6 +40,10 @@ public class Main {
         } else {
             System.out.println("Если скорость " + speed + ", можно ездить спокойно ");
         }
+    }
+
+    public static void task4 () {
+        System.out.println("Задача 4");
 
         byte old = 23;
         boolean institution1 = old >= 2 && old <= 6;
@@ -42,8 +60,10 @@ public class Main {
         } else {
             System.out.println("Если возвраст человека равен " + old + " лет, то ему пора ходить на работу");
         }
+    }
 
-
+    public static void task5 () {
+        System.out.println("Задача 5");
 
         byte ageChildren = 8;
         boolean ageLol1 = ageChildren < 5;
@@ -56,7 +76,10 @@ public class Main {
         } else {
             System.out.println("Если возвраст ребенка равен " + ageChildren + ", то ему можно кататься на атракцеоне");
         }
+    }
 
+    public static void task6 () {
+        System.out.println("Задача 6");
 
         byte capacityWagon = 102;
         byte sittingPlace = 60;
@@ -69,9 +92,12 @@ public class Main {
         if (gone1) {
             System.out.println("В вагоне осталось " + sittingRemained + " сидячих мест и " + standingRemained + " стоячих мест");
         } else {
-            System.out.println("В вагоне не осталось свободных мест " );
+            System.out.println("В вагоне не осталось свободных мест ");
         }
+    }
 
+    public static void task7 () {
+        System.out.println("Задача 7");
 
         int one = 6;
         int two = 14;
