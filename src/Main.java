@@ -23,7 +23,7 @@ public class Main {
     public static void task2 () {
         System.out.println("Задача 2");
 
-        byte temperature = 15;
+        int temperature = 15;
         if (temperature < 5) {
             System.out.println("На улице " + temperature + " градусов, нужно надеть шапку");
         } else {
@@ -34,7 +34,7 @@ public class Main {
     public static void task3 () {
         System.out.println("Задача 3");
 
-        byte speed = 80;
+        int speed = 80;
         if (speed > 60) {
             System.out.println("Если скорость " + speed + ", то придется заплатить штраф ");
         } else {
@@ -45,7 +45,7 @@ public class Main {
     public static void task4 () {
         System.out.println("Задача 4");
 
-        byte old = 23;
+       int old = 23;
         boolean institution1 = old >= 2 && old <= 6;
         boolean institution2 = old >= 7 && old <= 18;
         boolean institution3 = old >= 18 && old <= 24;
@@ -65,7 +65,7 @@ public class Main {
     public static void task5 () {
         System.out.println("Задача 5");
 
-        byte ageChildren = 8;
+        int ageChildren = 8;
         boolean ageLol1 = ageChildren < 5;
         boolean ageLol2 = ageChildren > 5 && ageChildren < 14;
         if (ageLol1) {
@@ -81,15 +81,15 @@ public class Main {
     public static void task6 () {
         System.out.println("Задача 6");
 
-        byte capacityWagon = 102;
-        byte sittingPlace = 60;
-        byte standingPlace = (byte) (capacityWagon - sittingPlace);
-        byte sittingWagon = 61;
-        byte standingWagon = 43;
-        byte sittingRemained = (byte) (sittingPlace - sittingWagon);
-        byte standingRemained = (byte) (standingPlace - standingWagon);
-        boolean gone1 = sittingWagon <= sittingPlace || standingWagon <= standingPlace;
-        if (gone1) {
+        int capacityWagon = 102;
+        int sittingPlace = 60;
+        int standingPlace = (byte) (capacityWagon - sittingPlace);
+        int sittingWagon = 61;
+        int standingWagon = 43;
+        int sittingRemained = (sittingPlace - sittingWagon);
+        int standingRemained = (standingPlace - standingWagon);
+        boolean gone = sittingWagon <= sittingPlace || standingWagon <= standingPlace;
+        if (gone) {
             System.out.println("В вагоне осталось " + sittingRemained + " сидячих мест и " + standingRemained + " стоячих мест");
         } else {
             System.out.println("В вагоне не осталось свободных мест ");
